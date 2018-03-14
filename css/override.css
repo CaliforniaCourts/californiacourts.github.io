@@ -1,0 +1,21 @@
+.bg-primary {
+    background-image: url('../img/header.png');
+    background-size: 60%;
+}
+
+header.masthead {
+
+    padding-bottom: 0;
+}
+
+
+.text-cursor {
+  font-weight: 500;
+  font-size: 100px;
+  color: #2E3D48;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #2d3e4f;
+}
