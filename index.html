@@ -122,37 +122,58 @@
 
         <div class="col-lg-6 ml-auto">
 
-          <form ng-if="false">
-
+          <form class="needs-validation" id="registerForm" name="registerForm" ng-submit="vm.register(registerForm)" novalidate> 
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" class="form-control form-control-lg" ng-model="vm.registerForm.name" id="name" placeholder="Full Name">
+              <input type="text" class="form-control form-control-lg" ng-model="vm.registerForm.name" id="name" placeholder="Full Name" required>
+              <div class="invalid-feedback">
+                Please enter your full name.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" class="form-control form-control-lg" ng-model="vm.registerForm.email" id="email" placeholder="Enter email">
+              <input type="email" class="form-control form-control-lg" ng-model="vm.registerForm.email" id="email" placeholder="Enter email" required>
+              <div class="invalid-feedback">
+                Please enter a valid email.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
             </div>
 
             <div class="form-group">
               <label for="phoneNumber">Phone number</label>
-              <input type="text" class="form-control form-control-lg" ng-model="vm.registerForm.phoneNumber" id="email" placeholder="Enter Phone Number">
+              <input type="text" class="form-control form-control-lg" ng-model="vm.registerForm.phoneNumber" id="phone" placeholder="Enter Phone Number" required>
+              <div class="invalid-feedback">
+                Please enter a valid 10 digit phone number.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
             </div>
 
             <div class="form-group">
               <label for="court">Your Court</label>
-              <select class="form-control form-control-lg" ng-model="vm.registerForm.court" id="court">
-                <option>Santa Clara</option>
-                <option>Los Angeles</option>
-                <option>Orange</option>
-                <option>Monterey</option>
-                <option>San Benito</option>
+              <select class="form-control form-control-lg" ng-model="vm.registerForm.court" id="court" required>
+                <option value="" selected>Choose your Court</option>
+                <option ng-repeat="court in vm.courts" value="court">{{court}}</option>
               </select>
+              <div class="invalid-feedback">
+                Please tell us the Court you work at.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
             </div>
 
             <div class="form-group">
               <label for="role">Job Role</label>
-              <select class="form-control form-control-lg" ng-model="vm.registerForm.role" id="role">
+              <select class="form-control form-control-lg" ng-model="vm.registerForm.role" id="role" required>
+                <option value="" selected>Choose your Job Title</option>
                 <option>Developer</option>
                 <option>Manager/Supervisor</option>
                 <option>CIO/Director</option>
@@ -161,14 +182,16 @@
                 <option>Business Analyst</option>
                 <option>Not Listed</option>
               </select>
+              <div class="invalid-feedback">
+                Please select a job title.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
             </div>
 
-            <button type="button" class="btn btn-primary btn-block btn-lg" ng-click="vm.register()">Register!</button>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Register!</button>
           </form>
-
-          <div style="text-align:center;">
-               <h3 style="text-align:center;">Coming Soon!</h3>
-          </div>
           
         </div>
 
@@ -179,16 +202,20 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-      </div>
+          <h4 class="text-center text-uppercase text-white">Follow us online!</h4>
+          <hr class="social-divider">
+          <div class="text-center">
+              <a href="https://montereysuperiorcourt.slack.com"><img src="img/slack.png" class="social"></a>
+              <a href="https://github.com/CaliforniaCourts"><img src="img/github.png" class="social"></a>    
+          </div>  
     </div>
   </footer>
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Superior Court of California, County of Monterey </small>
+      <small>Copyright &copy; Superior Courts of California</small>
     </div>
   </div>
 
@@ -216,6 +243,7 @@
   <!-- Contact Form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
