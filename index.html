@@ -183,8 +183,19 @@
                 <option>DBA</option>
                 <option>Analyst</option>
                 <option>Sys Admin</option>
-                <option>Not Listed</option>
+                <option>Other</option>
               </select>
+              <div class="invalid-feedback">
+                Please select a job title.
+              </div>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
+            </div>
+            
+            <div class="form-group" ng-if="vm.registerForm.role === 'Other'">
+              <label for="title">Title</label>
+              <input type="text" class="form-control form-control-lg" ng-model="vm.registerForm.title" id="title" placeholder="Enter Job Title" required>
               <div class="invalid-feedback">
                 Please select a job title.
               </div>

@@ -36,6 +36,11 @@ courtDev.controller("splashController", function($scope, $log, Restangular, $htt
                 "jobRole": vm.registerForm.role,
                 "phone": vm.registerForm.phoneNumber
             };
+
+            if(registerObj.jobRole === 'Other') {
+                registerObj.jobRole = registerObj.jobRole + ': ' + vm.registerForm.title;
+            }
+            
             console.log(registerObj);
     
             Restangular.all('api/registration').customPOST(registerObj).then(function (resp) {
