@@ -1,4 +1,4 @@
-# CaliforniaCourts.github.io
+[logo]: https://github.com/CaliforniaCourts/logos-artwork/blob/master/logo-transparent-background.png
 
 Get started
 =====================================
