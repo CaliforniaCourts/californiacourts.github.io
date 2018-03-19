@@ -1,4 +1,6 @@
-[logo]: https://github.com/CaliforniaCourts/logos-artwork/blob/master/logo-transparent-background.png
+![alt text](https://raw.githubusercontent.com/CaliforniaCourts/logos-artwork/master/logo-transparent-background.png)
+
+### Accepting Pull Requests!
 
 Get started
 =====================================
