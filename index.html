@@ -162,7 +162,7 @@
               <label for="court">Your Court</label>
               <select class="form-control form-control-lg" ng-model="vm.registerForm.court" id="court" required>
                 <option value="" selected>Choose your Court</option>
-                <option ng-repeat="court in vm.courts" value="court">{{court}}</option>
+                <option ng-repeat="court in vm.courts" value="{{court}}">{{court}}</option>
               </select>
               <div class="invalid-feedback">
                 Please tell us the Court you work at.
