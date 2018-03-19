@@ -1,7 +1,7 @@
 var courtDev = angular.module("courtDev", ['restangular']);
 
 courtDev.config(function (RestangularProvider) {
-    RestangularProvider.setBaseUrl('http://courtdev-api.azurewebsites.net/');
+    RestangularProvider.setBaseUrl('https://courtdev-api.azurewebsites.net/');
 });
 
 courtDev.controller("splashController", function($scope, $log, Restangular, $http){
