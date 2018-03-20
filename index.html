@@ -73,19 +73,43 @@
       <h5 style="color:#6dd7f1;">Family Justice Center Courthouse</h5>
       <h5 style="color:#6dd7f1;">201 North 1st Street</h5>
       <h5 style="color:#6dd7f1;">San Jose, CA 95113</h5>
-      <hr class="star-light">
-
     </div>
+    <br>
   </header>
 
   <section class="about" id="about">
     <div class="container">
       <h2 class="text-center text-uppercase">About</h2>
-      <hr class="star-light mb-5">
+      <hr class="star-light mb-5 blue-star">
       <div class="row">
         <div class="col-lg-12 ml-auto">
           <p class="lead">Our purpose is to promote collaboration between the software developer and programmers within the California Courts.
             Our goal is to improve the software development process through discussing, brainstorming and sharing experiences.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-8">
+          <img src="img/parking.png" class="parking">
+        </div>
+        <br>
+        <div class="col-lg-4 text-center">
+          <h4>Parking Details</h4>
+          <hr>
+          <p>Parking for the Family Justice Center Courthouse is offered in two convienent locations just one block away from the Court. The locations are the San Pedro Market Parking Garage or the San Pedro Square Lot.</p>
+          <i class="fa fa-location-arrow fa-2x dark-blue"></i>
+          <p class="dark-blue">San Pedro Market Parking Garage</p>
+          <a href="https://goo.gl/maps/WBSBAXZLowz">
+            <p class="address">45 N San Pedro St</p>
+            <p class="address">San Jose, CA 95113</p>
+          </a>
+          <i class="fa fa-location-arrow fa-2x dark-blue"></i>
+          <p class="dark-blue">San Pedro Square Lot</p>
+          <a href="https://goo.gl/maps/vZ7iSBjytYA2">
+            <p class="address">64 N Market St</p>
+            <p class="address">San Jose, CA 95113</p>
+          </a>  
+          <br>
         </div>
       </div>
     </div>
@@ -116,7 +140,7 @@
   <section class="about" id="register">
     <div class="container">
       <h2 class="text-center text-uppercase">Register</h2>
-      <hr class="star-light mb-5">
+      <hr class="star-light mb-5 blue-star">
       <div class="row">
 
         <div class="col-lg-3 ml-auto">
@@ -176,13 +200,13 @@
               <label for="role">Job Role</label>
               <select class="form-control form-control-lg" ng-model="vm.registerForm.role" id="role" required>
                 <option value="" selected>Choose your Job Title</option>
-                <option>Developer</option>
-                <option>Manager/Supervisor</option>
-                <option>CIO/Director</option>
-                <option>Judical Officer</option>
-                <option>DBA</option>
                 <option>Analyst</option>
-                <option>Sys Admin</option>
+                <option>CIO/Director</option>
+                <option>DBA</option>
+                <option>Developer</option>
+                <option>Judical Officer</option>
+                <option>Manager/Supervisor</option>
+                <option>System Admin</option>
                 <option>Other</option>
               </select>
               <div class="invalid-feedback">

@@ -3,8 +3,20 @@
     background-size: 60%;
 }
 
+.bg-darkblue {
+  background-color: #2C3E50;
+}
+
 header.masthead {
     padding-bottom: 0;
+}
+
+.blue-star {
+  border-color: #2c3e50 !important;
+}
+
+.address {
+  margin: 0;
 }
 
 .social {
@@ -19,12 +31,24 @@ header.masthead {
   border-top: 1px solid white;
 }
 
+.dark-blue {
+  color: #2c3e50;
+}
+
 .footer {
   padding-bottom: 0;
 }
 
 .skyline {
   width: 100%;
+}
+
+.parking {
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 10px black;
+  box-shadow: 5px 10px 18px #2c3e50;
 }
 
 .navbar-logo {
