@@ -3,8 +3,8 @@
     background-size: 60%;
 }
 
-.bg-darkblue {
-  background-color: #2C3E50;
+.bg-grey {
+  background-color: #9badbe;
 }
 
 header.masthead {
@@ -27,7 +27,7 @@ header.masthead {
   margin: 20px;
 }
 
-.social-divider {
+.divider {
   border-top: 1px solid white;
 }
 
