@@ -67,17 +67,44 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-
       <img class="img-fluid mb-5 d-block mx-auto" src="img/profile-la.png" alt="">
-
     </div>
     <br>
   </header>
 
-  <section class="about" id="about">
+  <!-- Details -->
+  <section class="details" id="details">
     <div class="container">
-      <h2 class="text-center text-uppercase dark-blue">About</h2>
+      <h2 class="text-center text-uppercase dark-blue">DETAILS</h2>
       <hr class="star-light mb-5 blue-star">
+      <div class="row">
+        <div class="col-lg-6 ml-auto text-center">
+        
+          <h3>DATE</h3>
+          <h4>FEBRUARY 22ND, 2019</h4>
+          <br>
+
+        </div>
+
+        <div class="col-lg-6 ml-auto text-center">
+        
+            <h3>LOCATION</h3>
+            <h4>111 North Hill Street, Room 428H</h4>
+                <h4>Los Angeles, CA 90012</h4>
+
+            <br>
+  
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="bg-primary text-white mb-0" style="background-color: #19658f!important;" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">About</h2>
+      <hr class="star-light mb-5">
       <div class="row">
         <div class="col-lg-12 ml-auto">
           <p class="lead">Our purpose is to promote collaboration between the software developer and programmers within the California Judicial
@@ -88,39 +115,72 @@
     </div>
   </section>
 
-  <section class="bg-primary text-white mb-0" id="agenda">
+  <section class="agenda" id="agenda">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">Agenda</h2>
-      <hr class="star-light mb-5">
+      <h2 class="text-center text-uppercase dark-blue">AGENDA</h2>
+      <hr class="star-light mb-5 blue-star">
       <div class="row">
-        <div class="col-lg-12 ml-auto">
+        <div class="col-lg-6 ml-auto">
           <p class="lead" style="text-align:center;">
 
-
-           <b>Coming Soon.</b>
-
+              <span style="font-size:18px;font-weight: bold;">
+                  9:00 AM </span> 
+                <br>
+                Early Bird Meet and Greet
+                <br>
+                <br>
+    
+                <span style="font-size:18px;font-weight: bold;">10:00 AM </span> 
+                <br>
+                Welcome & Introductions
+                <br>
+                <br>
+    
+                <span style="font-size:18px;font-weight: bold;">10:15 AM </span> 
+                <br>
+                The Developer Workshop 
+                <br>
+                <br>
+    
+                <span style="font-size:18px;font-weight: bold;">12:00 PM </span> 
+                <br>
+                Lunch (Court Sharing)
+      
 
           </p>
         </div>
+        <div class="col-lg-6 ml-auto">
+            <p class="lead" style="text-align:center;">
+
+              <span style="font-size:18px;font-weight: bold;">1:00 PM </span> 
+              <br>
+              CourtStack Presentation
+              <br>
+              <br>
+  
+              <span style="font-size:18px;font-weight: bold;">1:30 PM</span> 
+              <br>
+              Analytics
+              <br>
+              <br>
+              
+              <span style="font-size:18px;font-weight: bold;">02:00 PM </span> 
+              <br>
+              Continuous Integration and Delivery 
+              <br>
+              <br>
+
+              <span style="font-size:18px;font-weight: bold;">03:00 PM </span> 
+              <br>
+              End of Meetup   
+  
+            </p>
+          </div>
       </div>
     </div>
   </section>
 
-  <section class="about" id="details">
-
-      <div class="container">
-        <h2 class="text-center text-uppercase dark-blue">Details</h2>
-        <hr class="star-light mb-5 white-start blue-star">
-        <p class="lead" style="text-align:center;">
-
-          <b>Coming Soon.</b>
-
-         </p>
-
-      </div>
-    </div>
-  </section>
-
+ 
   <section class="bg-primary text-white" id="register">
     <div class="container">
       <h2 class="text-center text-uppercase">Register</h2>
@@ -129,10 +189,10 @@
 
         <div class="col-lg-3 ml-auto">
         </div>
-        <div class="col-lg-12 ml-auto text-center">
+        <div class="col-lg-12 ml-auto text-center" hidden>
           <h3>Registration for LA Courtdev Coming Soon!</h3>
         </div>
-        <div class="col-lg-6 ml-auto" hidden>
+        <div class="col-lg-6 ml-auto" >
 
           <form class="needs-validation" id="registerForm" name="registerForm" ng-submit="vm.register(registerForm)" novalidate>
             <div class="form-group">
