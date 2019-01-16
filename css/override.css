@@ -7,6 +7,22 @@
   background-color: #9badbe;
 }
 
+.tx-grey {
+  color: #949494;
+}
+
+.tx-orange {
+  color: #e55645;
+}
+
+.tx-yellow {
+  color: #f4a210;
+}
+
+.agenda-icon {
+  padding: 12px;
+}
+
 header.masthead {
     padding-bottom: 0;
 }
