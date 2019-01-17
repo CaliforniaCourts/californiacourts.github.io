@@ -66,11 +66,28 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead bg-primary text-white text-center">
+  <header class="masthead bg-primary bg-full text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile-la.png" alt="">
+      <img class="img-fluid d-block mx-auto" src="img/profile-la.png" alt="">
+      <hr>
+      <div class="counters-section">
+      <p class="secondary-text"> Join </p>
+      <div class="primary-counter">
+        <span id="count">0</span>Developers
+      </div>
+      <p class="secondary-text"> In </p>
+      <div class="primary-counter">
+        <span id="days">0</span>Days
+        <span id="hours">0</span>Hours
+        <span id="minutes">0</span>Minutes
+        <span id="seconds">0</span>Seconds.
+      </div>
+      <p class="secondary-text">Let's Go.</p>
+      <a class="js-scroll-trigger call-to-action" href="#register">
+        <i class="fas fa-arrow-circle-down fa-3x"></i>
+      </a>
+      </div>
     </div>
-    <br>
   </header>
 
   <!-- Details -->
@@ -86,7 +103,7 @@
           <br><br>
           
           
-              <h3 style="color:#2994d0">LOCATION</h3>
+              <h3 class="dark-blue">LOCATION</h3>
           <h4>Stanley Mosk Courthouse</h4>
           <h4>111 North Hill Street, Room 428H</h4>
           <h4>Los Angeles, CA 90012</h4>
@@ -99,7 +116,7 @@
         
       
         
-          <h3 style="color:#2994d0">HOTELS</h3>
+          <h3 class="dark-blue">HOTELS</h3>
           <h4>near Stanley Mosk Courthouse</h4>
           <br>
           <b>Omni Los Angeles Hotel at CA Plaza, $180 </b><br>
@@ -132,16 +149,6 @@
           <br> <br>
 
         </div>
-        <div class="col-lg-6 ml-auto text-center">
-        
-          <h3 style="color:#2994d0">LOCATION</h3>
-          <h4>Stanley Mosk Courthouse</h4>
-          <h4>111 North Hill Street, Room 428H</h4>
-          <h4>Los Angeles, CA 90012</h4>
-           <br>
-  
-        </div>
-
       </div>
     </div>
   </section>
@@ -168,7 +175,7 @@
       <div class="row">
         <div class="col-lg-6 ml-auto text-center">
           <p>
-            <i class="fab fa-earlybirds fa-3x agenda-icon dark-blue"></i>
+            <i class="fab fa-earlybirds fa-5x agenda-icon dark-blue"></i>
             <br>
             <span style="font-size:18px;font-weight: bold;">
               9:00 AM </span> 
@@ -176,14 +183,14 @@
             Early Bird Meet and Greet
           </p>
           <p>
-            <i class="fas fa-handshake fa-3x agenda-icon dark-blue"></i>
+            <i class="fas fa-handshake fa-5x agenda-icon dark-blue"></i>
             <br>
             <span style="font-size:18px;font-weight: bold;">10:00 AM </span> 
             <br>
             Welcome & Introductions
           </p>
           <p>
-            <i class="fas fa-code fa-3x agenda-icon tx-orange"></i>
+            <i class="fas fa-code fa-5x agenda-icon tx-orange"></i>
             <br>
             <span style="font-size:18px;font-weight: bold;">10:15 AM </span> 
             <br>
@@ -192,7 +199,7 @@
             <b class="tx-orange">Los Angeles Court</b>
           </p>
           <p>
-            <i class="fas fa-utensils fa-3x agenda-icon dark-blue"></i>
+            <i class="fas fa-utensils fa-5x agenda-icon dark-blue"></i>
             <br>
             <span style="font-size:18px;font-weight: bold;">12:00 PM </span> 
             <br>
@@ -201,7 +208,7 @@
         </div>
         <div class="col-lg-6 ml-auto text-center">
             <p>
-              <i class="fas fa-layer-group fa-3x agenda-icon tx-orange"></i>
+              <i class="fas fa-layer-group fa-5x agenda-icon tx-orange"></i>
               <br>
               <span style="font-size:18px;font-weight: bold;">1:00 PM </span> 
               <br>
@@ -210,7 +217,7 @@
               <b class="tx-orange">Santa Clara Court</b>
             </p>
             <p>
-              <i class="fas fa-chart-line fa-3x agenda-icon tx-orange"></i>
+              <i class="fas fa-chart-line fa-5x agenda-icon tx-orange"></i>
               <br>
               <span style="font-size:18px;font-weight: bold;">1:30 PM</span> 
               <br>
@@ -219,7 +226,7 @@
               <b class="tx-orange">Orange Court</b>
             </p>
             <p>
-              <i class="fas fa-code-branch fa-3x agenda-icon tx-orange"></i>
+              <i class="fas fa-code-branch fa-5x agenda-icon tx-orange"></i>
               <br>
               <span style="font-size:18px;font-weight: bold;">02:00 PM </span> 
               <br>
@@ -228,7 +235,7 @@
               <b class="tx-orange">Monterey Court</b>
             </p>
             <p>
-              <i class="fas fa-calendar-check fa-3x agenda-icon dark-blue"></i>
+              <i class="fas fa-calendar-check fa-5x agenda-icon dark-blue"></i>
               <br>
               <span style="font-size:18px;font-weight: bold;">03:00 PM </span> 
               <br>
@@ -397,6 +404,10 @@
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Angular Dependant Libraries -->
+  <script src="vendor/countup/countUp.min.js"></script>
+  <script src="vendor/countup/angular-countUp.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>

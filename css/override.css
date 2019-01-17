@@ -3,6 +3,10 @@
     background-size: 100%;
 }
 
+.bg-full {
+  min-height: 100vh;
+}
+
 .bg-grey {
   background-color: #9badbe;
 }
@@ -103,4 +107,37 @@ header.masthead {
 hr.star-light:after {
   color: #fff;
   background-color: #2d3e4f;
+}
+
+.secondary-text {
+  font-size: 24px;
+  color: #343a40;
+  font-weight: 300;
+}
+
+.call-to-action {
+  color: #343a40;
+}
+
+.counters-section {
+  background: #dadada2e;
+  border-radius: 60px;
+  padding: 16px;
+}
+
+
+/* Timer */
+.primary-counter {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+.primary-counter span {
+  font-size: 60px;
+  color: #444;
+  margin: 0 3px 0 15px;
+}
+.primary-counter span:first-child {
+  margin-left: 0;
 }
