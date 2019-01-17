@@ -119,12 +119,12 @@ hr.star-light:after {
 
 /* Timer */
 .primary-counter {
-  font-family: Arial, sans-serif;
   font-size: 20px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
+  font-size: 24px;
 }
 .primary-counter span {
-  font-size: 60px;
+  font-size: 70px;
   margin: 0 3px 0 15px;
 }
 .primary-counter span:first-child {
@@ -137,7 +137,7 @@ hr.star-light:after {
   color: #2c3e50;
 }
 .counter-div {
-  padding: 60px;
+  padding: 70px;
 }
 
 
