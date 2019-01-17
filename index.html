@@ -27,6 +27,7 @@
   <!-- Custom styles for this template -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link href="css/override.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -66,29 +67,36 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead bg-primary bg-full text-white text-center">
+  <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid d-block mx-auto" src="img/profile-la.png" alt="">
-      <hr>
-      <div class="counters-section">
-      <p class="secondary-text"> Join </p>
-      <div class="primary-counter">
-        <span id="count">0</span>Developers
-      </div>
-      <p class="secondary-text"> In </p>
-      <div class="primary-counter">
-        <span id="days">0</span>Days
-        <span id="hours">0</span>Hours
-        <span id="minutes">0</span>Minutes
-        <span id="seconds">0</span>Seconds.
-      </div>
-      <p class="secondary-text">Let's Go.</p>
-      <a class="js-scroll-trigger" href="#register">
-        <i class="fas fa-arrow-circle-down fa-3x"></i>
-      </a>
-      </div>
+      <img class="img-fluid d-block mb-0 mx-auto courtdev" src="img/profile-la.png" alt="">
+      <a class="btn btn-primary call-to-action animated infinite pulse js-scroll-trigger" href="#register" role="button">Register Now</a>
     </div>
   </header>
+  
+  <!-- Counter -->
+    <div class="container-fluid">
+        <div class="row">
+          <div style="background-color: #2d3e4f!important;" class="col-lg-6 counter-div" id="counter">
+            <div class="row">
+              <div class="primary-counter text-white animated bounceInLeft text-center col-lg-12">
+                Join <span class="counter-yellow" id="count"> 0</span> Developers.
+              </div>
+            </div>
+          </div>
+          <div style="background-color: white !important;" class="col-lg-6 counter-div" id="counter">
+              <div class="row">
+                <div class="primary-counter counter-blue animated delay-2x bounceInRight text-center col-lg-12">
+                  In <span class="counter-yellow" id="days"> 0</span> Days
+                  <span class="counter-yellow" id="hours"> 0</span> Hours
+                  <span class="counter-yellow" id="minutes"> 0</span> Minutes
+                  <span class="counter-yellow" id="seconds"> 0</span> Seconds.
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  
 
   <!-- Details -->
   <section class="details" id="details">
@@ -98,7 +106,7 @@
       <div class="row">
         <div class="col-lg-6 ml-auto text-center">
             <p>
-              <i class="fas fa-calendar-day fa-4x agenda-icon dark-blue"></i>
+              <i class="fas fa-calendar-day fa-4x animated bounce agenda-icon dark-blue"></i>
               <br>
               <span style="font-size:18px;font-weight: bold;">
                 DATE </span> 
