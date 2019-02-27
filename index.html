@@ -70,28 +70,35 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
       <img class="img-fluid d-block mb-0 mx-auto courtdev" src="img/profile-la.png" alt="">
-      <a class="btn btn-primary call-to-action animated infinite pulse js-scroll-trigger" href="#register" role="button">Register Now</a>
-      <p style="color: #2d3e4f; font-weight: bold"><i class="fas fa-info-circle"></i> Registration closes Febuary 15th</p>
+      <a class="btn btn-primary call-to-action animated infinite pulse js-scroll-trigger" href="#register" role="button" hidden>Register Now</a>
+      <p style="color: #2d3e4f; font-weight: bold" hidden><i class="fas fa-info-circle"></i> Registration closes Febuary 15th</p>
     </div>
   </header>
   
   <!-- Counter -->
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
-          <div style="background-color: #2d3e4f!important;" class="col-lg-6 counter-div" id="counter">
+          <div style="background-color: #2d3e4f!important;" class="col-lg-6 counter-div" id="counter" hidden>
             <div class="row">
               <div class="primary-counter text-white animated bounceInLeft delay-1s text-center col-lg-12">
                 Join <span class="counter-yellow" id="count"> 0</span> Developers.
               </div>
             </div>
           </div>
-          <div style="background-color: white !important;" class="col-lg-6 counter-div" id="counter">
+          <div style="background-color: white !important;" class="col-lg-6 counter-div" id="counter" hidden>
               <div class="row">
                 <div class="primary-counter counter-blue animated delay-1s bounceInRight text-center col-lg-12">
                   In <span class="counter-yellow" id="days"> 0</span> Days
                   <span class="counter-yellow" id="hours"> 0</span> Hours
                   <span class="counter-yellow" id="minutes"> 0</span> Minutes
                   <span class="counter-yellow" id="seconds"> 0</span> Seconds.
+                </div>
+              </div>
+            </div>
+            <div style="background-color: #2d3e4f!important;" class="col-lg-12 counter-div">
+              <div class="row">
+                <div class="text-white text-center col-lg-12">
+                  <h5>Thank you for attending LA CourtDEV! Feedback on the event can be left <a href="https://goo.gl/forms/KM2xbXIgPkGk4fqi1">here</a>.</h5>
                 </div>
               </div>
             </div>
@@ -105,7 +112,7 @@
       <h2 class="text-center text-uppercase dark-blue">DETAILS</h2>
       <hr class="star-light mb-5 blue-star">
       <div class="row">
-        <div class="col-lg-6 ml-auto text-center">
+        <div class="col-lg-6 ml-auto text-center" hidden>
             <p>
               <i class="fas fa-calendar-day fa-4x animated bounce agenda-icon dark-blue"></i>
               <br>
@@ -165,47 +172,8 @@
         </p>
         </div>
 
-        <div class="col-lg-6 ml-auto text-center">
-        
-      
-          <p>
-              <i class="fas fa-hotel fa-4x agenda-icon dark-blue"></i>
-              <br>
-              <span style="font-size:18px;font-weight: bold;">
-                HOTELS </span> 
-              <br>
-              *near Stanley Mosk Courthouse
-          </p>
-          <br>
-          <b>Omni Los Angeles Hotel at CA Plaza, $180 </b><br>
-          251 S. Olive St., Los Angeles, CA 90012 <br>
-          .28 mi <br> <br>
-          
-          <b>Double Tree by Hilton Hotel LA Downtown, $180</b><br>
-          120 S. Los Angeles St., Los Angeles, CA 90012<br>
-          .4 mi<br> <br>
-          
-          <b>The LA Hotel Downtown, $120 </b> <br>
-          333 S. Figueroa St., Los Angeles, CA 90071<br>
-          .49 mi<br> <br>
-          
-          <b>The Westin Bonaventure Hotel & Suites, $120</b><br>
-          404 S. Figueroa St., Los Angeles, CA 90071<br>
-          .56 mi<br> <br>
-          
-          <b>Sheraton Grand Los Angeles, $180</b><br>
-          711 S. Hope St., Los Angeles, CA 90017<br>
-          .83 mi<br> <br>
-          
-          <b>Hotel Indigo Los Angeles Downtown, $180</b><br>
-          899 Francisco St., Los Angeles, CA 90015<br>
-          1.15 mi<br> <br>
-          
-          <b>Residence Inn Los Angeles LA Live, $180</b><br>
-          901 W. Olympic Boulevard, Los Angeles, CA 90015<br>
-          1.27 mi
-          <br> <br>
-
+        <div class="col-lg-12 ml-auto text-center">
+          <p>Details for the next CourtDEV coming soon!</p>
         </div>
       </div>
     </div>
@@ -231,7 +199,7 @@
       <h2 class="text-center text-uppercase dark-blue">AGENDA</h2>
       <hr class="star-light mb-5 blue-star">
       <div class="row">
-        <div class="col-lg-6 ml-auto text-center">
+        <div class="col-lg-6 ml-auto text-center" hidden>
           <p>
             <i class="fab fa-earlybirds fa-5x agenda-icon dark-blue"></i>
             <br>
@@ -264,7 +232,7 @@
             Lunch (Court Sharing)
           </p>
         </div>
-        <div class="col-lg-6 ml-auto text-center">
+        <div class="col-lg-6 ml-auto text-center" hidden>
             <p>
               <i class="fas fa-layer-group fa-5x agenda-icon tx-orange"></i>
               <br>
@@ -301,6 +269,9 @@
               <br>
             </p>
           </div>
+          <div class="col-lg-12 ml-auto text-center">
+            <p>Agenda for the next CourtDEV coming soon!</p>
+          </div>
       </div>
     </div>
   </section>
@@ -314,10 +285,10 @@
 
         <div class="col-lg-3 ml-auto">
         </div>
-        <div class="col-lg-12 ml-auto text-center" hidden>
-          <h3>Registration for LA Courtdev Coming Soon!</h3>
-        </div>
         <div class="col-lg-12 ml-auto text-center">
+          <h3>Registration for the next CourtDEV Coming Soon!</h3>
+        </div>
+        <div class="col-lg-12 ml-auto text-center" hidden>
           <h3>Registration for CourtDEV Los Angeles has closed! We'll see you at the Event <i class="far fa-grin-alt"></i> <i class="far fa-hand-peace"></i></h3>
         </div>
         <div class="col-lg-6 ml-auto" hidden>
